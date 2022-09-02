@@ -2,15 +2,13 @@
 
 World Time
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is basic mobile app created using Flutter to display time in various parts of the world.
+Some of the features in this app design are
+  1. Usage of Routes to pass data between screens.
+  2. ListView Builder to reuse the design.
+  3. SpinKitFadingCube for loading screen.
+  4. Changing the background based on condiions.
+  4. HTTP calls and asynchronous processes.
+  5. Custom classes and templates for common functions and design.
+  6. Date time formatter, json formatter and exception handling.
+  
