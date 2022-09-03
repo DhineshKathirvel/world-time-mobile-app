@@ -18,7 +18,8 @@ class WorldTime {
       Response response = await get(uri);
       Map data = jsonDecode(response.body);
       DateTime now = DateTime.parse(data['datetime']);
-      now = now.add(Duration(hours: int.parse(data['utc_offset'].substring(1, 3))));
+      String sign = data['utc_offset'].substring(0, 1);
+      now = identical(sign,'+') ? now.add(Duration(hours: int.parse(data['utc_offset'].substring(1, 3)))) : now.subtract(Duration(hours: int.parse(data['utc_offset'].substring(1, 3))));
       isDayTime = now.hour > 6 && now.hour < 19 ? true : false;
       time = DateFormat.jm().format(now);
     }catch(error){
